@@ -1,0 +1,981 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Sans TC", serif;
+  color: #221E1F;
+}
+
+.maincolor {
+  color: #56C4C5;
+}
+
+.lh-24 {
+  line-height: 24px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.fee-btn {
+  display: inline-block;
+  background: #56C4C5 0% 0% no-repeat padding-box;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+  color: white;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 12px 32px;
+}
+
+.fee-btn:active {
+  background: #7cd1d2;
+}
+
+.m-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: bold;
+}
+
+.radius-shadow {
+  background: white;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+}
+
+.mobile-header {
+  display: none;
+}
+
+.container {
+  max-width: 1120px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 0;
+  margin-bottom: 30px;
+}
+
+.header .logo img {
+  max-height: 40px;
+  width: auto;
+}
+
+.header .fee-btn-org {
+  background: #FF5D50;
+  border: 1px solid #FF5D50;
+  border-radius: 22px;
+  color: white;
+  line-height: 24px;
+  padding: 8px 0;
+  text-align: center;
+  width: 128px;
+}
+
+.header .fee-btn-org:active {
+  background: #ff8c83;
+}
+
+.promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 217px;
+}
+
+.promo .slogan {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.promo .slogan h2 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.promo .slogan p {
+  font-size: 48px;
+  line-height: 70px;
+}
+
+.promo .slogan h3 {
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.promo .promoimg {
+  max-width: 532px;
+}
+
+.sns {
+  max-width: 969px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sns .sns-title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sns ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sns ul .sns-card {
+  width: 30%;
+  text-align: center;
+}
+
+.sns ul .sns-card img {
+  max-width: 90px;
+  margin: 24px auto;
+}
+
+.sns ul .sns-card h4 {
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.sns ul .sns-card p {
+  color: #747474;
+}
+
+.role {
+  max-width: 1088px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.role .role-description {
+  font-size: 20px;
+  line-height: 29px;
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+.role .role-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.role .role-list .role-card {
+  width: 23.5%;
+  margin-right: 16px;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.role .role-list .role-card:last-child {
+  margin-right: 0;
+}
+
+.role .role-list .role-card img {
+  border-radius: 12px 12px 0 0;
+}
+
+.role .role-list .role-card h5 {
+  margin: 16px 0;
+}
+
+.role .role-list .role-card p {
+  margin: 0 16px;
+}
+
+.feature {
+  max-width: 1039px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.feature .feature-list {
+  max-width: 507px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feature .feature-list .feature-card {
+  width: 45%;
+  padding: 32px 32px 48px 32px;
+  margin-bottom: 28px;
+}
+
+.feature .feature-list .feature-card .feature-icon1 {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon01.svg") no-repeat center center, white;
+  background-size: auto;
+  border-radius: 86px;
+  width: 86px;
+  height: 86px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+}
+
+.feature .feature-list .feature-card .feature-icon2 {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon02.svg") no-repeat center center, white;
+  background-size: auto;
+  border-radius: 86px;
+  width: 86px;
+  height: 86px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+}
+
+.feature .feature-list .feature-card .feature-icon3 {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon03.svg") no-repeat center center, white;
+  background-size: auto;
+  border-radius: 86px;
+  width: 86px;
+  height: 86px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+}
+
+.feature .feature-list .feature-card .feature-icon4 {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon04.svg") no-repeat center center, white;
+  background-size: auto;
+  border-radius: 86px;
+  width: 86px;
+  height: 86px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+}
+
+.feature .feature-list .feature-card h4 {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 24px auto 16px 0;
+}
+
+.feature .feature-list .feature-card p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.feature .feature-knowmore {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.feature .feature-knowmore h3 {
+  font-size: 32px;
+  line-height: 46px;
+  margin-bottom: 16px;
+}
+
+.feature .feature-knowmore p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+.praise {
+  max-width: 1088px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.praise h4 {
+  margin-bottom: 104px;
+  text-align: center;
+}
+
+.praise .praise-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.praise .praise-list .praise-card {
+  width: 32%;
+  margin-right: 16px;
+  padding: 48px 32px 24px 32px;
+  position: relative;
+}
+
+.praise .praise-list .praise-card:last-child {
+  margin-right: 0;
+}
+
+.praise .praise-list .praise-card .user-icon1 {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/user01.jpg?raw=true") no-repeat center center, white;
+  background-size: contain;
+  border-radius: 80px;
+  width: 80px;
+  height: 80px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  position: absolute;
+  top: -48px;
+  left: 32px;
+}
+
+.praise .praise-list .praise-card .user-icon2 {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/user02.jpg?raw=true") no-repeat center center, white;
+  background-size: contain;
+  border-radius: 80px;
+  width: 80px;
+  height: 80px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  position: absolute;
+  top: -48px;
+  left: 32px;
+}
+
+.praise .praise-list .praise-card .user-icon3 {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/user03.jpg?raw=true") no-repeat center center, white;
+  background-size: contain;
+  border-radius: 80px;
+  width: 80px;
+  height: 80px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  position: absolute;
+  top: -48px;
+  left: 32px;
+}
+
+.praise .praise-list .praise-card .user-report {
+  text-align: left;
+  line-height: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.praise .praise-list .praise-card .user-company {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.praise .praise-list .praise-card .namerate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.praise .praise-list .praise-card .namerate .rate {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.praise .praise-list .praise-card .namerate .rate .star {
+  margin-left: 8px;
+}
+
+.praise .function-dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.praise .function-dot .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #DDDDDD;
+  margin-right: 8px;
+}
+
+.praise .function-dot .dot:last-child {
+  width: 16px;
+  height: 10px;
+  border-radius: 50px;
+  background: #FFD153;
+}
+
+footer {
+  max-width: 100%;
+}
+
+footer .letstalk {
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg) no-repeat top left, white;
+  background-size: 100%;
+  text-align: center;
+  padding-top: 260px;
+  padding-bottom: 100px;
+}
+
+footer .letstalk h3 {
+  margin-bottom: 48px;
+}
+
+footer .copyright {
+  text-align: center;
+  background: #F5F5F5;
+  line-height: 24px;
+  padding: 16px 0 16px 0;
+}
+
+@media (max-width: 992px) {
+  .promo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .promo .slogan {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .promo .slogan p {
+    font-size: 38.4px;
+    line-height: 56px;
+  }
+  .promo .slogan h3 {
+    font-size: 16px;
+    line-height: 23.2px;
+  }
+  .promo .promoimg {
+    max-width: 425.6px;
+  }
+  .role .role-list .role-card {
+    width: 45%;
+    margin-bottom: 24px;
+  }
+  .feature {
+    max-width: 1039px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .feature .feature-list {
+    max-width: 507px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .feature .feature-list .feature-card {
+    width: 45%;
+    padding: 32px 32px 48px 32px;
+    margin-bottom: 28px;
+  }
+  .feature .feature-list .feature-card h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 24px auto 16px 0;
+  }
+  .feature .feature-list .feature-card p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .feature .feature-knowmore {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .feature .feature-knowmore h3 {
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 16px;
+  }
+  .feature .feature-knowmore p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+  .praise .praise-list .praise-card .namerate {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .praise .praise-list .praise-card .namerate .rate {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .praise .praise-list .praise-card .namerate .rate .star {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .promo .slogan {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .promo .slogan p {
+    font-size: 36px;
+    line-height: 52.5px;
+  }
+  .promo .slogan h3 {
+    font-size: 15px;
+    line-height: 21.75px;
+  }
+  .promo .promoimg {
+    max-width: 319.2px;
+  }
+  .sns {
+    max-width: 969px;
+    margin-bottom: 100px;
+  }
+  .sns .sns-title {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .sns ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sns ul .sns-card {
+    width: 30%;
+    text-align: center;
+  }
+  .sns ul .sns-card img {
+    max-width: 90px;
+    margin: 24px auto;
+  }
+  .sns ul .sns-card h4 {
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 24px;
+  }
+  .sns ul .sns-card p {
+    color: #747474;
+  }
+  .sns ul .sns-card p br {
+    display: none;
+  }
+  .feature {
+    margin-bottom: 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .feature .feature-list {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+  .feature .feature-list .feature-card {
+    width: 43%;
+    padding: 32px 32px 48px 32px;
+    margin-bottom: 28px;
+  }
+  .feature .feature-list .feature-card h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 24px auto 16px 0;
+  }
+  .feature .feature-list .feature-card p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .feature .feature-knowmore {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    text-align: center;
+  }
+  .feature .feature-knowmore br {
+    display: inline;
+  }
+  .praise .praise-list .praise-card .namerate {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .praise .praise-list .praise-card .namerate .rate {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .praise .praise-list .praise-card .namerate .rate .star {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .m-title {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: bold;
+  }
+  body {
+    background-size: 0;
+  }
+  .hiroball-1 {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg) no-repeat right;
+    background-size: contain;
+    width: 126px;
+    position: absolute;
+    top: 145vh;
+  }
+  .hiroball-2 {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg) no-repeat;
+    background-size: cover;
+    width: 88px;
+    height: 135px;
+    position: absolute;
+    top: 100vh;
+    right: 0;
+    z-index: -1;
+    -webkit-transform: translate(0, 1900%);
+            transform: translate(0, 1900%);
+  }
+  .hiroball-3 {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg) no-repeat top right;
+    background-size: cover;
+    width: 77px;
+    height: 153px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transform: translate(0%, 2950%);
+            transform: translate(0%, 2950%);
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .header {
+    display: none;
+  }
+  .mobile-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 16px 20px;
+    margin-bottom: 32px;
+    border-bottom: 3px solid #FFD153;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile-header .logo img {
+    max-height: 24px;
+    width: auto;
+  }
+  .mobile-header .fee-btn-org {
+    background: #FF5D50;
+    border: 1px solid #FF5D50;
+    border-radius: 22px;
+    color: white;
+    line-height: 24px;
+    padding: 8px 0;
+    text-align: center;
+    width: 128px;
+  }
+  .mobile-header .fee-btn-org:active {
+    background: #ff8c83;
+  }
+  .promo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 92px;
+  }
+  .promo .slogan h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .promo .slogan p {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  .promo .slogan h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .promo .promoimg {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg) no-repeat center bottom;
+    background-size: contain;
+    max-width: 532px;
+    padding-bottom: 10px;
+  }
+  .sns {
+    margin-bottom: 60px;
+  }
+  .sns .sns-title {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .sns ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sns ul .sns-card {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .sns ul .sns-card img {
+    max-width: 60px;
+    margin: 16px auto;
+  }
+  .sns ul .sns-card h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+  .sns ul .sns-card p {
+    color: #747474;
+  }
+  .role {
+    margin-bottom: 60px;
+  }
+  .role .role-description {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+  .role .role-list .role-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .role .role-list .role-card:last-child {
+    margin-right: auto;
+  }
+  .feature {
+    margin-bottom: 60px;
+  }
+  .feature .feature-list {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .feature .feature-list .feature-card {
+    width: 230px;
+    padding: 32px 24px 48px 24px;
+    margin-bottom: 24px;
+  }
+  .feature .feature-list .feature-card h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 24px auto 16px 0;
+  }
+  .feature .feature-list .feature-card p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .feature .feature-knowmore {
+    margin-bottom: 32px;
+  }
+  .feature .feature-knowmore px
+br {
+    display: inline;
+  }
+  .feature .feature-knowmore h3 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+  .feature .feature-knowmore p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .praise {
+    margin-bottom: 60px;
+  }
+  .praise .praise-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .praise .praise-list .praise-card {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  .praise .praise-list .praise-card:last-child {
+    margin-right: auto;
+  }
+  .praise .praise-list .praise-card .namerate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .praise .praise-list .praise-card .namerate .rate {
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 0 0 0;
+  }
+  .praise .praise-list .praise-card .namerate .rate .star {
+    margin: 0 8px 0 0;
+  }
+  footer {
+    max-width: 100%;
+  }
+  footer .letstalk {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg) no-repeat top center, white;
+    background-size: 100%;
+    text-align: center;
+    padding: 293px 20px 60px 20px;
+  }
+  footer .letstalk h3 {
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 24px;
+  }
+}
+/*# sourceMappingURL=all.css.map */
