@@ -84,6 +84,10 @@ body {
   font-weight: bold;
 }
 
+.section-space {
+  margin-bottom: 100px;
+}
+
 .fee-btn {
   display: inline-block;
   background: #56C4C5 0% 0% no-repeat padding-box;
@@ -112,7 +116,7 @@ body {
           box-shadow: 0px 2px 10px #00000014;
 }
 
-body {
+.index-body {
   background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg) no-repeat top right;
   background-size: 60%;
 }
@@ -153,6 +157,45 @@ body {
   z-index: -1;
   -webkit-transform: translate(35%, 1850%);
           transform: translate(35%, 1850%);
+}
+
+.feeintro-body {
+  background-size: 0;
+}
+
+.feeintro-body .bg-block {
+  background: #F7F9FD 0% 0% no-repeat padding-box;
+  border-radius: 0px 0px 0px 300px;
+  width: 100vw;
+  height: 470px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bg-bn {
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg) no-repeat top right;
+  background-size: 100% auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hiroball-4 {
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg) no-repeat top right;
+  background-size: cover;
+  width: 94px;
+  height: 361px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transform: translate(0%, 210%);
+          transform: translate(0%, 210%);
 }
 
 .mobile-header {
@@ -233,7 +276,6 @@ body {
 
 .sns {
   max-width: 969px;
-  margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -275,7 +317,6 @@ body {
 .role {
   max-width: 1088px;
   text-align: center;
-  margin-bottom: 100px;
 }
 
 .role .role-description {
@@ -327,7 +368,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 100px;
 }
 
 .feature .feature-list {
@@ -419,7 +459,6 @@ body {
 
 .praise {
   max-width: 1088px;
-  margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -572,7 +611,365 @@ footer .copyright {
   padding: 16px 0 16px 0;
 }
 
+.fee-intro {
+  margin-top: 92px;
+  margin-bottom: 269px;
+}
+
+.fee-intro h3 {
+  font-size: 48px;
+  line-height: 70px;
+}
+
+.plan {
+  max-width: 909px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plan .plan-range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 48px -16px 54px auto;
+}
+
+.plan .plan-range .plan-list {
+  margin-right: 16px;
+  background: white 0% 0% no-repeat padding-box;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+  color: #56C4C5;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 12px 0;
+  width: 130px;
+}
+
+.plan .plan-range .plan-list:active {
+  background: #56C4C5;
+  color: white;
+}
+
+.plan .plan-compare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plan .plan-compare .plan-base {
+  width: 48%;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.plan .plan-compare .plan-base .plan-base-title {
+  font-size: 24px;
+  line-height: 35px;
+  border-bottom: 1px solid #DDDDDD;
+  padding: 10px 0 16px 0;
+}
+
+.plan .plan-compare .plan-base .plan-base-adv {
+  margin: 32px auto;
+}
+
+.plan .plan-compare .plan-base .sub-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 32px;
+}
+
+.plan .plan-compare .plan-base .sub-price .sub {
+  width: 169px;
+  padding: 24px 0px;
+  text-align: center;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+}
+
+.plan .plan-compare .plan-base .sub-price .sub .sub-number {
+  font-size: 12px;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+
+.plan .plan-compare .plan-base .sub-price .sub .sub-function {
+  color: #56C4C5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan .plan-compare .plan-base .sub-price .sub .sub-function .sub-rate {
+  font-size: 32px;
+  line-height: 35px;
+  margin-right: 8px;
+}
+
+.plan .plan-compare .plan-base .sub-price .sub .sub-function p {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.plan .plan-compare .plan-base .sub-price .equal {
+  font-size: 29px;
+  line-height: 42px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 21px;
+}
+
+.plan .plan-compare .plan-base .sub-price .price {
+  width: 169px;
+  padding: 24px 0px;
+  text-align: center;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+}
+
+.plan .plan-compare .plan-base .sub-price .price .monthly {
+  font-size: 12px;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+
+.plan .plan-compare .plan-base .sub-price .price .price-function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan .plan-compare .plan-base .sub-price .price .price-function .price-rate {
+  font-size: 32px;
+  line-height: 35px;
+  margin-right: 8px;
+}
+
+.plan .plan-compare .plan-base .sub-price .price .price-function p {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.plan .plan-compare .plan-base .plan-feature {
+  text-align: left;
+  list-style: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_check.svg);
+  list-style-position: outside;
+  margin-left: 50px;
+}
+
+.plan .plan-compare .plan-base .plan-feature .plan-feature-list {
+  margin-bottom: 16px;
+}
+
+.plan .plan-compare .plan-base .fee-btn {
+  margin-top: 16px;
+}
+
+.plan .plan-compare .plan-se {
+  width: 48%;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.plan .plan-compare .plan-se .plan-se-title {
+  font-size: 24px;
+  line-height: 35px;
+  border-bottom: 1px solid #DDDDDD;
+  padding: 10px 0 16px 0;
+}
+
+.plan .plan-compare .plan-se .plan-se-adv {
+  margin: 32px auto;
+}
+
+.plan .plan-compare .plan-se .sub-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 32px;
+}
+
+.plan .plan-compare .plan-se .sub-price .sub {
+  width: 169px;
+  padding: 24px 0;
+  text-align: center;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+}
+
+.plan .plan-compare .plan-se .sub-price .sub .sub-number {
+  font-size: 12px;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+
+.plan .plan-compare .plan-se .sub-price .sub .sub-function {
+  color: #56C4C5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan .plan-compare .plan-se .sub-price .sub .sub-function .sub-rate {
+  font-size: 32px;
+  line-height: 35px;
+  margin-right: 8px;
+}
+
+.plan .plan-compare .plan-se .sub-price .sub .sub-function p {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.plan .plan-compare .plan-se .sub-price .equal {
+  font-size: 29px;
+  line-height: 42px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 21px;
+}
+
+.plan .plan-compare .plan-se .sub-price .price {
+  width: 169px;
+  padding: 24px 0;
+  text-align: center;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+}
+
+.plan .plan-compare .plan-se .sub-price .price .monthly {
+  font-size: 12px;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+
+.plan .plan-compare .plan-se .sub-price .price .price-function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan .plan-compare .plan-se .sub-price .price .price-function .price-rate {
+  font-size: 32px;
+  line-height: 35px;
+  margin-right: 8px;
+}
+
+.plan .plan-compare .plan-se .sub-price .price .price-function p {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.plan .plan-compare .plan-se .plan-feature {
+  text-align: left;
+  list-style: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_check.svg);
+  list-style-position: outside;
+  margin-left: 50px;
+}
+
+.plan .plan-compare .plan-se .plan-feature .plan-feature-list {
+  margin-bottom: 16px;
+}
+
+.plan .plan-compare .plan-se .fee-btn {
+  margin-top: 16px;
+}
+
+.faq {
+  max-width: 904px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.faq .faq-title {
+  margin-bottom: 48px;
+}
+
+.faq .faq-list li {
+  padding: 16px 32px;
+  margin-bottom: 16px;
+}
+
+.faq .faq-list li .quest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faq .faq-list li .quest h4 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.faq .faq-list li p {
+  line-height: 32px;
+  color: #747474;
+  padding: 24px 0 24px 0;
+  text-align: left;
+}
+
 @media (max-width: 992px) {
+  .bg-bn {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg) no-repeat top right;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+  }
   .promo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -609,7 +1006,6 @@ footer .copyright {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 100px;
   }
   .feature .feature-list {
     max-width: 507px;
@@ -664,6 +1060,16 @@ footer .copyright {
 }
 
 @media (max-width: 767px) {
+  .bg-bn {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg) no-repeat top right;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
   .promo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -687,10 +1093,6 @@ footer .copyright {
   }
   .promo .promoimg {
     max-width: 319.2px;
-  }
-  .sns {
-    max-width: 969px;
-    margin-bottom: 100px;
   }
   .sns .sns-title {
     text-align: center;
@@ -776,6 +1178,108 @@ footer .copyright {
     margin-left: 5px;
     margin-right: 5px;
   }
+  .plan .plan-range {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    overflow-x: auto;
+  }
+  .plan .plan-range .plan-list {
+    white-space: nowrap;
+  }
+  .plan .plan-compare {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .plan .plan-compare .plan-base .sub-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 32px;
+  }
+  .plan .plan-compare .plan-base .sub-price .sub {
+    width: 135.2px;
+    padding: 24px 0;
+  }
+  .plan .plan-compare .plan-base .sub-price .sub .sub-function {
+    color: #56C4C5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .plan .plan-compare .plan-base .sub-price .sub .sub-function .sub-rate {
+    font-size: 25.6px;
+    line-height: 28px;
+    margin-right: 6.4px;
+  }
+  .plan .plan-compare .plan-base .sub-price .sub .sub-function p {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .plan .plan-compare .plan-base .sub-price .equal {
+    margin: 0 10px;
+  }
+  .plan .plan-compare .plan-base .sub-price .price {
+    width: 135.2px;
+    padding: 24px 0px;
+  }
+  .plan .plan-compare .plan-base .sub-price .price .price-function .price-rate {
+    font-size: 25.6px;
+    line-height: 28px;
+    margin-right: 8px;
+  }
+  .plan .plan-compare .plan-base .sub-price .price .price-function p {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .plan .plan-compare .plan-base .plan-feature {
+    margin-right: 24px;
+  }
+  .plan .plan-compare .plan-se .sub-price .sub {
+    width: 135.2px;
+    padding: 24px 0;
+  }
+  .plan .plan-compare .plan-se .sub-price .sub .sub-function .sub-rate {
+    font-size: 25.6px;
+    line-height: 28px;
+    margin-right: 8px;
+  }
+  .plan .plan-compare .plan-se .sub-price .equal {
+    margin: 0 10px;
+  }
+  .plan .plan-compare .plan-se .sub-price .price {
+    width: 135.2px;
+    padding: 24px 0;
+  }
+  .plan .plan-compare .plan-se .sub-price .price .price-function .price-rate {
+    font-size: 25.6px;
+    line-height: 28px;
+    margin-right: 8px;
+  }
+  .plan .plan-compare .plan-se .plan-feature {
+    margin-left: 50px;
+    margin-right: 24px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -783,6 +1287,9 @@ footer .copyright {
     font-size: 28px;
     line-height: 40px;
     font-weight: bold;
+  }
+  .section-space {
+    margin-bottom: 60px;
   }
   body {
     background-size: 0;
@@ -818,6 +1325,38 @@ footer .copyright {
     -webkit-transform: translate(0%, 2950%);
             transform: translate(0%, 2950%);
   }
+  .feeintro-body .bg-block {
+    background: #F7F9FD 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 0px 300px;
+    width: 100vw;
+    height: 90vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .bg-bn {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg) no-repeat top right;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+  }
+  .hiroball-4 {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg) no-repeat top right;
+    background-size: cover;
+    width: 94px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transform: translate(0%, 480%);
+            transform: translate(0%, 480%);
+  }
   .container {
     padding: 0 20px;
   }
@@ -837,6 +1376,7 @@ footer .copyright {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background: white;
   }
   .mobile-header .logo img {
     max-height: 24px;
@@ -1019,6 +1559,275 @@ br {
     font-size: 24px;
     line-height: 35px;
     margin-bottom: 24px;
+  }
+  .fee-intro {
+    margin-top: 48px;
+    margin-bottom: 421px;
+  }
+  .fee-intro h3 {
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 16px;
+  }
+  .plan .plan-range {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 24px 0px 32px auto;
+  }
+  .plan .plan-range .plan-list {
+    margin-right: 6px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+  }
+  .plan .plan-range .plan-list:active {
+    background: #56C4C5;
+    color: white;
+  }
+  .plan .plan-compare {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .plan .plan-compare .plan-base {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 32px;
+    margin-bottom: 24px;
+  }
+  .plan .plan-compare .plan-base .plan-base-title {
+    font-size: 24px;
+    line-height: 35px;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px 0 16px 0;
+  }
+  .plan .plan-compare .plan-base .plan-base-adv {
+    margin: 32px auto;
+  }
+  .plan .plan-compare .plan-base .sub-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 32px;
+  }
+  .plan .plan-compare .plan-base .sub-price .sub {
+    width: 169px;
+    padding: 24px 0px;
+    text-align: center;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+  }
+  .plan .plan-compare .plan-base .sub-price .sub .sub-number {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 8px;
+  }
+  .plan .plan-compare .plan-base .sub-price .sub .sub-function {
+    color: #56C4C5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .plan .plan-compare .plan-base .sub-price .sub .sub-function .sub-rate {
+    font-size: 32px;
+    line-height: 35px;
+    margin-right: 8px;
+  }
+  .plan .plan-compare .plan-base .sub-price .sub .sub-function p {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .plan .plan-compare .plan-base .sub-price .equal {
+    font-size: 29px;
+    line-height: 42px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 21px;
+  }
+  .plan .plan-compare .plan-base .sub-price .price {
+    width: 169px;
+    padding: 24px 0px;
+    text-align: center;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+  }
+  .plan .plan-compare .plan-base .sub-price .price .monthly {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 8px;
+  }
+  .plan .plan-compare .plan-base .sub-price .price .price-function {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .plan .plan-compare .plan-base .sub-price .price .price-function .price-rate {
+    font-size: 32px;
+    line-height: 35px;
+    margin-right: 8px;
+  }
+  .plan .plan-compare .plan-base .sub-price .price .price-function p {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .plan .plan-compare .plan-base .plan-feature {
+    text-align: left;
+    list-style: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_check.svg);
+    list-style-position: outside;
+    margin-left: 50px;
+  }
+  .plan .plan-compare .plan-base .plan-feature .plan-feature-list {
+    margin-bottom: 12px;
+  }
+  .plan .plan-compare .plan-base .fee-btn {
+    margin-top: 12px;
+  }
+  .plan .plan-compare .plan-se {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 32px;
+  }
+  .plan .plan-compare .plan-se .plan-se-title {
+    font-size: 24px;
+    line-height: 35px;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px 0 16px 0;
+  }
+  .plan .plan-compare .plan-se .plan-se-adv {
+    margin: 32px auto;
+  }
+  .plan .plan-compare .plan-se .sub-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 32px;
+  }
+  .plan .plan-compare .plan-se .sub-price .sub {
+    width: 169px;
+    padding: 24px 0;
+    text-align: center;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+  }
+  .plan .plan-compare .plan-se .sub-price .sub .sub-number {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 8px;
+  }
+  .plan .plan-compare .plan-se .sub-price .sub .sub-function {
+    color: #56C4C5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .plan .plan-compare .plan-se .sub-price .sub .sub-function .sub-rate {
+    font-size: 32px;
+    line-height: 35px;
+    margin-right: 8px;
+  }
+  .plan .plan-compare .plan-se .sub-price .sub .sub-function p {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .plan .plan-compare .plan-se .sub-price .equal {
+    font-size: 29px;
+    line-height: 42px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 21px;
+  }
+  .plan .plan-compare .plan-se .sub-price .price {
+    width: 169px;
+    padding: 24px 0;
+    text-align: center;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+  }
+  .plan .plan-compare .plan-se .sub-price .price .monthly {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 8px;
+  }
+  .plan .plan-compare .plan-se .sub-price .price .price-function {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .plan .plan-compare .plan-se .sub-price .price .price-function .price-rate {
+    font-size: 32px;
+    line-height: 35px;
+    margin-right: 8px;
+  }
+  .plan .plan-compare .plan-se .sub-price .price .price-function p {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .plan .plan-compare .plan-se .plan-feature {
+    text-align: left;
+    list-style: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_check.svg);
+    list-style-position: outside;
+    margin-left: 50px;
+  }
+  .plan .plan-compare .plan-se .plan-feature .plan-feature-list {
+    margin-bottom: 12px;
+  }
+  .plan .plan-compare .plan-se .fee-btn {
+    margin-top: 12px;
+  }
+  .faq .faq-title {
+    margin-bottom: 32px;
+  }
+  .faq .faq-list li {
+    padding: 16px;
+  }
+  .faq .faq-list li .quest h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .faq .faq-list li p {
+    padding: 16px 0 24px 0;
   }
 }
 /*# sourceMappingURL=all.css.map */
