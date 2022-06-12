@@ -745,6 +745,7 @@ footer{
         .role-list{
             .role-card{
                 width: 45%;
+                margin-right: 0;
                 margin-bottom: 24px;
             }
         }
@@ -1047,7 +1048,7 @@ footer{
     
     // 模組end----
     // 全頁背景----
-body{
+.index-body{
     background-size: 0;
     
 }

@@ -996,6 +996,7 @@ footer .copyright {
   }
   .role .role-list .role-card {
     width: 45%;
+    margin-right: 0;
     margin-bottom: 24px;
   }
   .feature {
@@ -1291,7 +1292,7 @@ footer .copyright {
   .section-space {
     margin-bottom: 60px;
   }
-  body {
+  .index-body {
     background-size: 0;
   }
   .hiroball-1 {
